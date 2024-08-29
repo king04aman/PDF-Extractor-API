@@ -1,0 +1,38 @@
+# Exclude system-specific files
+**/.DS_Store
+
+# Python-specific files
+**/__pycache__
+**/.venv
+
+# IDE and editor files
+**/.classpath
+**/.project
+**/.settings
+**/.toolstarget
+**/.vs
+**/.vscode
+
+# Docker and project files
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/docker-compose*
+**/compose.y*ml
+**/Dockerfile*
+
+# Build and dependency directories
+**/bin
+**/charts
+**/node_modules
+**/npm-debug.log
+**/obj
+
+# YAML files for development secrets
+**/secrets.dev.yaml
+**/values.dev.yaml
+
+# Documentation and license files
+LICENSE
+README.md
