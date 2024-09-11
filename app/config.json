@@ -1,0 +1,8 @@
+{
+    "client_id": "YOUR_CLIENT_ID",
+    "client_secret": "YOUR_CLIENT_SECRET",
+    "url_auth": "YOUR_AUTH_URL",
+    "api_url": "YOUR_API_URL",
+    "access_token": "YOUR_ACCESS_TOKEN",
+    "expires_at": "YOUR_EXPIRES_AT"
+}
