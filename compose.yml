@@ -1,0 +1,22 @@
+version: '3.8'  # Use a specific version for compatibility
+
+services:
+  api:
+    build:
+      context: .  # Path to the Dockerfile
+      dockerfile: Dockerfile  # Specify the Dockerfile if it's not named 'Dockerfile'
+    container_name: pdfextractor-application
+    environment:
+      PORT: 8000
+      # Add any other environment variables needed by your application here
+    ports:
+      - "8000:8000"  # Expose port 8000 to the host
+    restart: "unless-stopped"  # Consider using 'unless-stopped' for automatic restarts
+    volumes:
+      - .:/app  # Bind mount for development (optional, remove for production)
+    networks:
+      - pdfextractor-network  # Use a custom network for better isolation (optional)
+
+networks:
+  pdfextractor-network:  # Define a custom network (optional)
+    driver: bridge  # Default network driver
